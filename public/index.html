@@ -24,20 +24,272 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="/images/favicon.PNG">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Shandy</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+      <div class="container">
+        <div>
+        </div>
+        <div class="menu">
+          <ul class="menuli nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#myExperience">Experience</a></li>
+            <li><a href="#myProject">Work</a></li>
+            <li><a class="resume-button" href="/FS-Dev-Resume.pdf" target="_blank"
+                   rel="noopener noreferrer">Resume</a></li>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          </ul>
+        </div>
+        <div id="hamburger" class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </div>
+      </div>
+    </header>
+    <div class="side">
+      <ul class="social">
+        <li class="git"><a href="https://github.com/shandylovecoding" aria-label="GitHub" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-github">
+          <title>GitHub</title>
+          <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg></a></li>
+        <li><a href="https://www.instagram.com/shandylovecoding/" aria-label="Instagram" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-instagram">
+          <title>Instagram</title>
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg></a></li>
+        <li><a href="https://twitter.com/shandy68200008/" aria-label="Twitter" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-twitter">
+          <title>Twitter</title>
+          <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+          </path>
+        </svg></a></li>
+        <li><a href="https://www.linkedin.com/in/shandy-law-007a14212/" aria-label="LinkedIn" target="_blank"><svg
+                xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-linkedin">
+          <title>LinkedIn</title>
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg></a></li>
+      </ul>
+    </div>
+    <div class="rightside">
+      <div class="email">
+        <a href="mailto:Shandylovecoding@gmail.com">Shandylovecoding@gmail.com</a>
+      </div>
+    </div>
+    <div id="content">
+      <main class="pages_MainContainer">
+        <section class="homePage">
+          <div class="fadeup">
+            <h1>Hi, my name is</h1>
+          </div>
+          <div class="fadeup">
+            <h2 class="big">Shandy Law.</h2>
+          </div>
+          <div class="fadeup">
+            <h3 class="big">I love coding..</h3>
+          </div>
+          <div class="fadeup">
+            <p> I was a registered nurse who is enthusiastic in helping others.
+              Currently, I just start my new journey to become a software engineer.
+              I wish combine my nursing knowledge with software development that can change the world a
+              little..
+            </p>
+          </div>
+        </section>
+
+        <section id="about" class="aboutme">
+          <div class="about_inner">
+            <div class="aboutText">
+              <h2 class="numbered-heading">..About Me..</h2>
+              <p> Recent Bootcamp graduate who has developed a mature and responsible approach to undertake
+                any task or situation. With a passion for developing scalable applications and become a full
+                stack developer</p>
+            </div>
+            <div class="aboutPhoto">
+              <img src="/images/aboutpic.jpeg" alt="">
+            </div>
+          </div>
+        </section>
+        <section id="myExperience" class="">
+          <h2 class="numbered-heading">Experiences</h2>
+
+          <div id="myExperience" class="grid tab_inner" data-state="section1">
+            <div class="tab_list" role="tablist" aria-label="Tabs" class="tab_list">
+              <button class="tab" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1"
+                      tabindex="0" data-setState="section1">Dotted</button>
+              <button class="tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2"
+                      tabindex="-1" data-setState="section2">Xccelerate</button>
+            </div>
+
+            <article id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" data-scene="section1">
+              <h3><span>Software Engineer</span><span class="company">&nbsp;@&nbsp;Dotted</span>
+              </h3>
+              <p class="range">October 2021 - Present</p>
+              <div class="exp_content">
+                <ul>
+                  <li>Developed and maintained code for in-house web app primarily using Flutter and
+                    Django</li>
+                  <li>Worked closely with designers and management team to develop, document, and manage the product website</li>
+
+                </ul>
+              </div>
+            </article>
+
+            <article id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" data-scene="section2">
+              <h3><span>Bootcamp Graduate</span><span class="company">&nbsp;@&nbsp;<a
+                      href="https://xccelerate.co/" class="inline-link" rel="noopener noreferrer"
+                      target="_blank">Xccelerate</a></span></h3>
+              <p class="range">May - September 2021</p>
+              <div>
+                <ul>
+                  <li>Full-time Full Stack Web Development Immersive</li>
+                  <li> Coding Bootcamp is
+                    designed for students with a burning desire to learn the most relevant coding
+                    languages
+                    and frameworks in the software development industry
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+
+          </div>
+        </section>
+        <!-- <section id="myExperience" class="">
+            <h2 class="numbered-heading">Experiences</h2>
+            <div class="tab_inner"  data-state="section1">
+                <div role="tablist" aria-label="Tabs" class="tab_list">
+                    <button id="tab-0" role="tab" tabindex="0" aria-selected="false" aria-controls="panel-1 " data-setState="section1"
+                        data-setState="panel-0" class="tab"><span>Dotted</span></button>
+
+                    <button id="tab-1" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-2" data-setState="section2"
+                        data-setState="panel-1" class="tab"><span>Xccelerate</span></button>
+                </div>
+                <div class="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
+                    <article id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-0" data-scene="section1">
+                        <h3><span>Engineer</span><span class="company">&nbsp;@&nbsp;<a
+                                    href="https://www.upstatement.com/" class="inline-link"
+                                    rel="noopener noreferrer" target="_blank">Upstatement</a></span></h3>
+                        <p class="range">October 2021 - Present</p>
+                        <div>
+                            <ul>
+                                <li>Communicate with multi-disciplinary teams of engineers, designers, producers,
+                                    and clients on a daily basis</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" data-scene="section2" hidden>
+                        <h3><span>Studio Developer</span><span class="company">&nbsp;@&nbsp;<a
+                                    href="https://web.northeastern.edu/scout/" class="inline-link"
+                                    rel="noopener noreferrer" target="_blank">Scout</a></span></h3>
+                        <p class="range">May - September 2021</p>
+                        <div>
+                            <ul>
+                                <li>Helped solidify a brand direction for blistabloc that spans both packaging and
+                                    web</li>
+                                <li>Interfaced with clients on a weekly basis, providing technological expertise
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+</div>
+</section> -->
+        <section id="myProject" class="myProject">
+          <h2 class="numbered-heading">What I’ve Built</h2>
+
+          <ul class="project-grid">
+            <li class="projectli">
+              <div class="project_div">
+                <div-header>
+                  <h3 class="project-title"><a href="" target="_blank"
+                                               rel="noopener noreferrer">Shadow</a>
+                    <div class="project-links">
+                      <a href="https://github.com/chengbrian/shadow_beta" aria-label="External Link"
+                         class="external" target="_blank" rel="noopener noreferrer"><i
+                              class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  </h3>
+                  <div-header class="project-description">
+                    <p>Shadow simplifies the process of teaching students how to speak, listen and write
+                      second languages online. By providing set of tools, on the online language
+                      learning platform, like the flash cards, quiz cards and dictation cards.</p>
+                  </div-header>
+                </div-header>
+                <div-footer>
+                  <ul class="project-tech-list">
+                    <li>React</li>
+                    <li>NodeJs</li>
+                    <li>KnexJs</li>
+                  </ul>
+                </div-footer>
+              </div>
+            </li>
+            <li class="projectli">
+              <div class="project_div">
+                <div-header>
+                  <h3 class="project-title"><a href="" target="_blank"
+                                               rel="noopener noreferrer">TravelApp</a>
+                    <div class="project-links">
+                      <a href="https://github.com/shandylovecoding/travelApp"
+                         aria-label="External Link" class="external" target="_blank"
+                         rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                  </h3>
+                  <div class="project-description">
+                    <p>TravelApp let travellers explore Hong Kong like a local.Travellers could search
+                      attractions information and use bookmarking system for trip planning. Each of
+                      them could also sharing their review in the journal.Manage travel and expense
+                      reports for department team members.</p>
+                  </div>
+                </div-header>
+                <div-footer>
+                  <ul class="project-tech-list">
+                    <li>ExpressJs</li>
+                    <li>NodeJs</li>
+                    <li>Prosgres</li>
+                  </ul>
+                </div-footer>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
   </body>
+  <script src="/scripts/myscripts.js"></script>
 </html>
